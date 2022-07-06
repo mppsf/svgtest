@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import sky from './sky.jpg'
 import './App.css';
 
 function App() {
@@ -33,11 +34,9 @@ function App() {
  
   return (
     <div className="App">
-      <div className='text'>
-        {data}
-      </div>
+      <div className="text">{data}</div>
 
-      <img src="/sky.jpg" className="img" />
+      <img src={sky} className="img" />
 
       <svg
         style={{ transform: "scale(1.2)" }}
@@ -60,10 +59,10 @@ function App() {
             stroke-width="2"
           >
             <polygon
-              onMouseMove={(e) =>{setPolygonHover(true)
-              setData(e.target.getAttribute('data-name'))
-              }
-              }
+              onMouseMove={(e) => {
+                setPolygonHover(true);
+                setData(e.target.getAttribute("data-name"));
+              }}
               onMouseLeave={() => setPolygonHover(false)}
               className="polygon"
               data-sold="true"
@@ -73,10 +72,10 @@ function App() {
               points="96 376.30602 0 30.3060198 57 9.30601981 57 6.30601981 75 0.306019805 88 6.30601981 95 4.30601981 164 40.3060198 169 38.3060198 263 76.3060198 290 419.30602 222 464.30602"
             ></polygon>
             <polygon
-              onMouseMove={(e) =>{setPolygonHover(true)
-              setData(e.target.getAttribute('data-name'))
-              }
-              }
+              onMouseMove={(e) => {
+                setPolygonHover(true);
+                setData(e.target.getAttribute("data-name"));
+              }}
               onMouseLeave={() => setPolygonHover(false)}
               className="polygon"
               data-sold="true"
@@ -86,10 +85,10 @@ function App() {
               points="408.907424 474.192549 408 229.918161 459.994891 197.30602 586.081837 252.651378 557.566345 494.349152 514.968904 534"
             ></polygon>
             <polygon
-              onMouseMove={(e) =>{setPolygonHover(true)
-              setData(e.target.getAttribute('data-name'))
-              }
-              }
+              onMouseMove={(e) => {
+                setPolygonHover(true);
+                setData(e.target.getAttribute("data-name"));
+              }}
               onMouseLeave={() => setPolygonHover(false)}
               className="polygon"
               data-sold="true"
@@ -99,10 +98,10 @@ function App() {
               points="444 206.392275 445.734251 123.762523 489.53549 99.3060198 600.566277 139.72238 586.369987 252.406737 459.457602 196.633887"
             ></polygon>
             <polygon
-              onMouseMove={(e) =>{setPolygonHover(true)
-              setData(e.target.getAttribute('data-name'))
-              }
-              }
+              onMouseMove={(e) => {
+                setPolygonHover(true);
+                setData(e.target.getAttribute("data-name"));
+              }}
               onMouseLeave={() => setPolygonHover(false)}
               className="polygon"
               data-sold="true"
@@ -112,10 +111,10 @@ function App() {
               points="467 110.810546 468.762935 46.7207678 507.782362 27.3060198 605.314066 58.9946346 596.137497 137.368656 489.054386 98.3221267"
             ></polygon>
             <polygon
-              onMouseMove={(e) =>{setPolygonHover(true)
-              setData(e.target.getAttribute('data-name'))
-              }
-              }
+              onMouseMove={(e) => {
+                setPolygonHover(true);
+                setData(e.target.getAttribute("data-name"));
+              }}
               onMouseLeave={() => setPolygonHover(false)}
               className="polygon"
               data-sold="true"
